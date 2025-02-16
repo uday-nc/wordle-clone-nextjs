@@ -1,0 +1,94 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #d3d6da;
+    background-color: transparent;
+    color: #000000;
+    transition: all 0.2s ease;
+}
+
+/* Light mode colors */
+.cell.filled {
+    border-color: #878a8c;
+}
+
+.cell.correct {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+    color: white;
+}
+
+.cell.present {
+    background-color: #c9b458;
+    border-color: #c9b458;
+    color: white;
+}
+
+.cell.absent {
+    background-color: #787c7e;
+    border-color: #787c7e;
+    color: white;
+}
+
+/* Dark mode styles */
+:global(.dark) .cell {
+    border-color: #3a3a3c;
+    color: white;
+}
+
+:global(.dark) .cell.filled {
+    border-color: #565758;
+}
+
+:global(.dark) .cell.correct {
+    background-color: #538d4e;
+    border-color: #538d4e;
+}
+
+:global(.dark) .cell.present {
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+}
+
+:global(.dark) .cell.absent {
+    background-color: #3a3a3c;
+    border-color: #3a3a3c;
+}
+
+@media (max-width: 480px) {
+    .cell {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .board {
+        gap: 4px;
+        padding: 5px;
+    }
+    
+    .row {
+        gap: 4px;
+    }
+}
