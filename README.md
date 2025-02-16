@@ -130,8 +130,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Uday N. Chakraborty - [@uday-nc](https://github.com/uday-nc)
 
-Project Link: [https://github.com/yourusername/techwordle](https://github.com/yourusername/techwordle)
-
 ---
 <div align="center">
 Built with 💻 by developers, for developers
